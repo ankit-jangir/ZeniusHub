@@ -22,7 +22,8 @@ import HelpFeedback from "./pages/Help-Feedback";
 import NoDataFound from "./pages/404";
 import Pricing from "./pages/Pricing";
 import TalkToUs from "./pages/Talk-To-Us";
-import NoInternet from './pages/NoInternet'
+import NoInternet from "./pages/Notinternet";
+
 
 
 
