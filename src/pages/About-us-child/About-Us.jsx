@@ -6,14 +6,17 @@ import { ICONS } from '../../component/Icons'
 import Button from '../../component/Button'
 import CTAsection from '../../component/CTAsection'
 import Location from '../../component/Location'
+import Header from '../../layout/Header'
+import Footer from '../../layout/Footer'
 
 
 const About = () => {
-  
+
   return (
     <>
+      <Header />
       <PageHero />
-  
+
       <div className="max-w-7xl mx-auto px-6 py-12 text-gray-800">
         {/* Who We Are */}
         <section className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-orange-50 to-white border border-orange-100 p-6 md:p-10 mb-12 reveal">
@@ -352,7 +355,8 @@ const About = () => {
         {/* Location & Connect */}
         <Location />
       </div>
-  
+      <Footer />
+
     </>
   )
 }

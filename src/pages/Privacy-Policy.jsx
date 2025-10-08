@@ -1,32 +1,34 @@
 import React from 'react'
 import PageHero from '../component/PageHero'
+import Header from '../layout/Header'
+import Footer from '../layout/Footer'
 
 const PrivacyPolicy = () => {
   return (
     <>
+      <Header />
       <PageHero title="Privacy Policy" />
       <section className="max-w-5xl mx-auto px-6 py-10">
         <div className="bg-white/95 backdrop-blur-sm rounded-xl shadow-xl border border-orange-100">
-          <div className="flex items-center justify-between px-6 md:px-10 py-5 border-b border-orange-100 rounded-t-xl bg-gradient-to-r from-orange-50/70 to-white">
-            <h2 className="text-xl md:text-2xl font-extrabold text-gray-900">Zeniushub School ERP – Privacy Policy</h2>
-            <a
-              href="/PDF/Zeniushub(policy_2).pdf"
-              download="Zeniushub-Privacy.pdf"
-              className="hidden sm:inline-flex items-center gap-2 px-3 py-2 rounded-lg text-[#ff6a21] border border-[#ff6a21] hover:bg-[#ff6a21] hover:text-white transition-colors text-sm md:text-base"
-            >
-              Download PDF
-            </a>
+          <div className="px-6 md:px-10 py-6 border-b border-orange-100 rounded-t-xl bg-gradient-to-r from-orange-50/70 to-white">
+            <div>
+              <p className="text-xs md:text-sm text-orange-500 font-semibold tracking-wide uppercase">Zeniushub Legal Document</p>
+              <h2 className="text-xl md:text-2xl font-extrabold text-gray-900 mb-2">Privacy Policy</h2>
+              <p className="text-sm md:text-base text-gray-600">
+                Learn how we collect, use, and protect your personal information when using our school management platform.
+              </p>
+            </div>
           </div>
 
           <article className="px-6 md:px-10 py-8 text-gray-800 leading-relaxed text-sm sm:text-[15px] md:text-base">
             <h3 className="text-lg md:text-xl font-bold text-[#ff6a21]">1. Introduction</h3>
-            <p className="mt-2">Zeniushub ("we," "us," or "our") respects your privacy and is committed to protecting personal information collected while using our School ERP platform available at <a href="https://zeniushub.in" className="text-[#ff6a21] hover:underline" target="_blank" rel="noreferrer">https://zeniushub.in</a>. This Privacy Policy explains the types of information we collect, how we use it, and your rights regarding that information.</p>
+            <p className="mt-2">Zeniushub ("we," "us," or "our") respects your privacy and is committed to protecting personal information collected while using our school management platform available at <a href="https://zeniushub.in" className="text-[#ff6a21] hover:underline" target="_blank" rel="noreferrer">https://zeniushub.in</a>. This Privacy Policy explains the types of information we collect, how we use it, and your rights regarding that information.</p>
 
             <h3 className="text-lg md:text-xl font-bold text-[#ff6a21] mt-6">2. Information We Collect</h3>
             <h4 className="font-semibold mt-2">Personal Data</h4>
             <p className="mt-1">We collect data that you or your institution provide, including:</p>
             <ul className="list-disc pl-6 mt-2 space-y-1">
-              <li>Names, emails, phone numbers, roles (master, admin, instructor, student)</li>
+              <li>Names, emails, phone numbers, roles (admin, teacher, student, parent)</li>
               <li>Academic records, attendance, examination results, fee payment details</li>
               <li>Contact details of parents or guardians as provided by institutions</li>
               <li>Biometric data, only with explicit consent for features like attendance identification</li>
@@ -38,7 +40,7 @@ const PrivacyPolicy = () => {
 
             <h3 className="text-lg md:text-xl font-bold text-[#ff6a21] mt-6">3. How We Use Your Information</h3>
             <ul className="list-disc pl-6 mt-2 space-y-1">
-              <li>To provide and maintain our ERP services and features tailored to each user role.</li>
+              <li>To provide and maintain our school management services and features tailored to each user role.</li>
               <li>To administer accounts and verify user identity.</li>
               <li>To process payments and manage subscriptions.</li>
               <li>To communicate important updates, notifications, and customer support.</li>
@@ -83,7 +85,12 @@ const PrivacyPolicy = () => {
             <h3 className="text-lg md:text-xl font-bold text-[#ff6a21] mt-6">11. Changes to This Privacy Policy</h3>
             <p className="mt-2">We may update this Privacy Policy occasionally to reflect changes in practices or legal requirements. Material changes will be communicated via our platform or email. Continued use of the service indicates acceptance of such changes.</p>
 
-            <h3 className="text-lg md:text-xl font-bold text-[#ff6a21] mt-6">12. Contact Information</h3>
+            <h3 className="text-lg md:text-xl font-bold text-[#ff6a21] mt-6">12. Disclaimer</h3>
+            <p className="mt-2">
+              This is a comprehensive educational technology project involving multiple complex systems and integrations. While we strive for accuracy and completeness in all documentation and privacy practices, any errors or omissions in this document or our platform are unintentional and do not reflect negligence on our part. We continuously work to improve our services and documentation. If you notice any discrepancies, please contact us for clarification.
+            </p>
+
+            <h3 className="text-lg md:text-xl font-bold text-[#ff6a21] mt-6">13. Contact Information</h3>
             <address className="not-italic mt-2 text-gray-800">
               <div><strong>Zeniushub</strong></div>
               <div>D-153, Hanuman Nagar, Amerpali Circle, Vaishali Nagar</div>
@@ -95,6 +102,7 @@ const PrivacyPolicy = () => {
           </article>
         </div>
       </section>
+      <Footer />
     </>
   )
 }

@@ -2,6 +2,8 @@ import React from "react";
 import PageHero from "../component/PageHero";
 import CTAsection from "../component/CTAsection";
 import { ICONS } from "../component/Icons";
+import Header from "../layout/Header";
+import Footer from "../layout/Footer";
 
 const steps = [
   {
@@ -39,6 +41,7 @@ const steps = [
 const OurProcess = () => {
   return (
     <>
+      <Header />
       <PageHero />
       <div className="py-16 bg-gradient-to-b from-orange-50 to-white px-3 md:px-20">
         <div className="max-w-screen-xl mx-auto px-4">
@@ -118,6 +121,7 @@ const OurProcess = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

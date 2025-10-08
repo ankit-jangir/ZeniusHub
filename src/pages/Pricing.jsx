@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import PageHero from "../component/PageHero";
+import Header from "../layout/Header";
+import Footer from "../layout/Footer";
 
 // Pricing data with numeric prices and optional offers
 const plans = [
@@ -176,7 +178,8 @@ const plans = [
 ];
 
 // Card Component
-const PricingCard = ({ plan, highlight, isExpanded, onToggleExpand }) => {
+const PricingCard = ({ plan, highlight }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
   const featureEntries = Object.entries(plan.features);
   const visibleFeatures = isExpanded ? featureEntries : featureEntries.slice(0, 6);
 
@@ -192,7 +195,10 @@ const PricingCard = ({ plan, highlight, isExpanded, onToggleExpand }) => {
     <div
       className={`relative bg-white rounded-2xl p-6 shadow-lg flex flex-col gap-4 transition-all hover:shadow-2xl ${highlight ? "popular-plan" : "border-r-2 border-b-2 border-orange-400"
         }`}
-      style={{ minHeight: isExpanded ? "auto" : "360px" }} // consistent card height when collapsed
+      style={{
+        minHeight: "360px",
+        alignSelf: "start"
+      }}
     >
       {highlight && (
         <div className="absolute top-2 right-2 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded">
@@ -241,7 +247,7 @@ const PricingCard = ({ plan, highlight, isExpanded, onToggleExpand }) => {
 
       {featureEntries.length > 6 && (
         <button
-          onClick={onToggleExpand}
+          onClick={() => setIsExpanded(!isExpanded)}
           className="text-orange-600 font-semibold hover:underline"
         >
           {isExpanded ? "Show Less" : "Read More"}
@@ -257,18 +263,10 @@ const PricingCard = ({ plan, highlight, isExpanded, onToggleExpand }) => {
 
 // Main Pricing Page
 const Pricing = () => {
-  const [expandedIndex, setExpandedIndex] = useState(null);
-
-  const toggleExpand = (index) => {
-    if (expandedIndex === index) {
-      setExpandedIndex(null); // collapse if same card clicked again
-    } else {
-      setExpandedIndex(index); // expand new card only
-    }
-  };
 
   return (
     <>
+      <Header />
       <PageHero />
       <section className="bg-gradient-to-b from-white via-orange-50 to-white py-16 px-4">
         <h2 className="text-4xl text-center font-extrabold text-orange-500 mb-4">
@@ -278,19 +276,17 @@ const Pricing = () => {
           Detailed pricing and features for every plan
         </p>
 
-        <div className="grid gap-8 md:grid-cols-3 max-w-6xl mx-auto items-stretch">
+        <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
           {plans.map((plan, idx) => (
             <PricingCard
               key={idx}
               plan={plan}
               highlight={plan.name === "Expert"}
-              isExpanded={expandedIndex === idx}
-              onToggleExpand={() => toggleExpand(idx)}
             />
           ))}
         </div>
       </section>
-
+      <Footer />
 
 
     </>

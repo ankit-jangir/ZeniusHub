@@ -3,67 +3,70 @@ import PageHero from "../component/PageHero";
 import CounterCard from "../component/counter";
 import CTAsection from "../component/CTAsection";
 import { ICONS } from "../component/Icons";
+import Header from "../layout/Header";
+import Footer from "../layout/Footer";
 
 const Clients = () => {
   const [activeCard, setActiveCard] = useState(null)
   return (
     <>
+      <Header />
       <PageHero />
       {/* Top: Zeniushub impact with counters + icons */}
       <div className="py-14 md:py-20 px-4 sm:px-8 md:px-20 bg-gradient-to-b from-orange-50 to-white">
-  <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-    {/* Image Section */}
-    <div className="flex justify-center md:justify-start">
-      <img
-        src="/Img/about-us.png"
-        alt="Zeniushub clients"
-        className="rounded-2xl shadow-lg w-full max-w-md md:max-w-full h-64 sm:h-80 md:h-96 object-cover object-center"
-      />
-    </div>
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          {/* Image Section */}
+          <div className="flex justify-center md:justify-start">
+            <img
+              src="/Img/about-us.png"
+              alt="Zeniushub clients"
+              className="rounded-2xl shadow-lg w-full max-w-md md:max-w-full h-64 sm:h-80 md:h-96 object-cover object-center"
+            />
+          </div>
 
-    {/* Text Section */}
-    <div className="text-center md:text-left">
-      <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#ff6a21] mb-3">
-        Trusted by Modern Schools
-      </h2>
-      <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
-        Zeniushub digitizes daily operations for schools — admissions, fees,
-        attendance, exams and parent communication — on a secure, scalable
-        platform.
-      </p>
+          {/* Text Section */}
+          <div className="text-center md:text-left">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#ff6a21] mb-3">
+              Trusted by Modern Schools
+            </h2>
+            <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
+              Zeniushub digitizes daily operations for schools — admissions, fees,
+              attendance, exams and parent communication — on a secure, scalable
+              platform.
+            </p>
 
-      {/* Stats Section */}
-      <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        {[
-          { n: 80, t: "Happy Clients", Icon: ICONS.Users },
-          { n: 50, t: "Institutions", Icon: ICONS.award },
-          { n: 230, t: "Projects", Icon: ICONS.barchart3 },
-        ].map((c, i) => (
-          <div
-            key={i}
-            className="rounded-2xl bg-white border border-[#ff6a21]/20 shadow-md hover:shadow-lg transition-all p-6 flex flex-col items-center justify-center min-h-[130px] sm:min-h-[150px]"
-          >
-            <div className="mb-2 h-12 w-12 rounded-xl bg-orange-50 flex items-center justify-center">
-              <c.Icon className="text-[#ff6a21] text-xl sm:text-2xl" />
-            </div>
-            <div className="text-3xl sm:text-4xl font-extrabold text-[#ff6a21]">
-              <CounterCard
-                number={c.n}
-                duration={4000}
-                title=""
-                bgColor="bg-transparent"
-                textColor="text-[#ff6a21]"
-              />
-            </div>
-            <div className="text-xs sm:text-sm font-semibold text-gray-700 mt-1">
-              {c.t}
+            {/* Stats Section */}
+            <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+              {[
+                { n: 80, t: "Happy Clients", Icon: ICONS.Users },
+                { n: 50, t: "Institutions", Icon: ICONS.award },
+                { n: 230, t: "Projects", Icon: ICONS.barchart3 },
+              ].map((c, i) => (
+                <div
+                  key={i}
+                  className="rounded-2xl bg-white border border-[#ff6a21]/20 shadow-md hover:shadow-lg transition-all p-4 flex flex-col items-center justify-center min-h-[130px] sm:min-h-[150px]"
+                >
+                  <div className=" h-12 w-12 rounded-xl bg-orange-50 flex items-center justify-center">
+                    <c.Icon className="text-[#ff6a21] text-xl sm:text-2xl" />
+                  </div>
+                  <div className="text-3xl sm:text-4xl font-extrabold text-[#ff6a21]">
+                    <CounterCard
+                      number={c.n}
+                      duration={4000}
+                      title=""
+                      bgColor="bg-transparent"
+                      textColor="text-[#ff6a21]"
+                    />
+                  </div>
+                  <div className="text-xs sm:text-sm font-semibold text-gray-700">
+                    {c.t}
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
-        ))}
+        </div>
       </div>
-    </div>
-  </div>
-</div>
 
 
       {/* Testimonials: image + quote cards */}
@@ -79,7 +82,7 @@ const Clients = () => {
               { q: '“Fees and reports are finally in one place. Huge time saver.”', n: 'Admin Head, Pune' },
               { q: '“Parents love the app – communication is instant and clear.”', n: 'Coordinator, Jaipur' },
               { q: '“Support team hand‑held us through first exam cycle.”', n: 'Director, Indore' },
-            ].map((t, i)=> (
+            ].map((t, i) => (
               <div key={i} className="rounded-2xl border border-orange-100 bg-orange-50/40 shadow p-5 h-full">
                 <p className="text-gray-800">{t.q}</p>
                 <div className="mt-2 text-sm text-[#ff6a21] font-semibold">{t.n}</div>
@@ -110,19 +113,19 @@ const Clients = () => {
                 text: "QR/biometric attendance with instant notifications and flexible timetables.",
               },
               {
-                img: "/Img/logos/demo4.jpg",
+                img: "/Img/Exam.jpg",
                 heading: "Exams & Results",
                 text: "Plan exams, publish report cards and share securely with parents.",
               },
               {
-                img: "/Img/logos/demo5.jpg",
+                img: "/Img/Parent-App.png",
                 heading: "Parent App & Communication",
-                text: "Broadcasts, circulars and two‑way updates keep everyone aligned.",
+                text: "Broadcasts, circulars and two-way updates keep everyone aligned.",
               },
               {
-                img: "/Img/logos/demo3.webp",
-                heading: "Multi‑branch Control",
-                text: "Central oversight for groups with branch‑wise permissions and audit.",
+                img: "/Img/Multi-branch.jpg",
+                heading: "Multi-branch Control",
+                text: "Central oversight for groups with branch-wise permissions and audit.",
               },
             ].map((client, index) => (
               <div
@@ -159,6 +162,7 @@ const Clients = () => {
       <div className="py-16 px-5 md:px-20">
         <CTAsection />
       </div>
+      <Footer />
     </>
   );
 };

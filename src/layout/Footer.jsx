@@ -50,7 +50,7 @@ export default function Footer() {
             </div>
             <ul className="list-disc list-inside space-y-3 text-gray-700">
 
-              <li><a className="hover:text-[#ff6a21] underline decoration-dotted underline-offset-4" href="/Contact-us">Talk To Us</a></li>
+              <li><a className="hover:text-[#ff6a21] underline decoration-dotted underline-offset-4" href="/Talk-To-Us">Talk To Us</a></li>
 
               <li><a className="hover:text-[#ff6a21] underline decoration-dotted underline-offset-4" href="/Help-Feedback">Help & Feedback</a></li>
             </ul>

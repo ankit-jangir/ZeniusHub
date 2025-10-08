@@ -2,6 +2,8 @@ import React from "react";
 import PageHero from "../component/PageHero";
 import Lottie from "react-lottie-player";
 import faqAnimation from '../assets/video/faq.json'
+import Header from "../layout/Header";
+import Footer from "../layout/Footer";
 
 const faqs = [
   {
@@ -52,6 +54,7 @@ const HelpFeedback = () => {
 
   return (
     <>
+      <Header />
       <PageHero />
 
       <div className="max-w-6xl mx-auto px-6 py-12 text-gray-800">
@@ -104,6 +107,7 @@ const HelpFeedback = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

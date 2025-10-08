@@ -8,6 +8,8 @@ import PromoModal from "../component/PromoModal";
 import Button from "../component/Button";
 import { useNavigate } from 'react-router-dom';
 import TechProcessCard from "../component/TechProcessCard";
+import Footer from "../layout/Footer";
+import Header from "../layout/Header";
 const Homepage = () => {
   const data = [
     {
@@ -141,6 +143,7 @@ const Homepage = () => {
 
   return (
     <>
+      <Header />
       <PromoModal delayMs={8000} />
       {/* Main Background with Elegant Gradients */}
       <div className="fixed inset-0 -z-10">
@@ -422,7 +425,7 @@ const Homepage = () => {
               className="w-full h-auto max-h-[450px] sm:max-h-[500px] object-cover"
             />
           </motion.div>
-    </div>
+        </div>
       </section>
 
 
@@ -448,13 +451,14 @@ const Homepage = () => {
             <TechProcessCard step={step} title={title} desc={desc} />
 
           ))}
-    </div>
+        </div>
       </section>
 
       {/* Call To Action */}
       <section className="px-6 py-10 max-w-7xl mx-auto">
         <CTAsection />
       </section>
+      <Footer />
     </>
   );
 };

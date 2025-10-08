@@ -1,6 +1,8 @@
 import React from 'react'
 import PageHero from '../../component/PageHero'
 import TechProcessCard from '../../component/TechProcessCard';
+import Header from '../../layout/Header';
+import Footer from '../../layout/Footer';
 
 const WhyChooseUs = () => {
   const points = [
@@ -46,6 +48,7 @@ const WhyChooseUs = () => {
   ];
   return (
     <>
+      <Header />
       <PageHero title="Why Choose Us" />
       <section className="max-w-7xl mx-auto px-6 py-12 text-gray-800">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -68,53 +71,54 @@ const WhyChooseUs = () => {
 
       {/* Layout 2: Assurance cards */}
       <section className="max-w-7xl mx-auto px-6 pb-16 text-gray-800">
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-    {[
-      {
-        t: "Data Protection",
-        d: "Encryption, backups, and strict data residency policies.",
-      },
-      {
-        t: "Access Control",
-        d: "Fine-grained roles, SSO, and audit logs reduce risk.",
-      },
-      {
-        t: "Reliability",
-        d: "Multi-AZ infrastructure, proactive monitoring & alerts.",
-      },
-      {
-        t: "Compliance",
-        d: "Best-practice handling aligned with applicable regulations.",
-      },
-    ].map((c, i) => (
-      <div
-        key={c.t}
-        className={`relative rounded-2xl bg-white border border-orange-100 p-6 text-center shadow-md hover:shadow-xl transition-all duration-500 reveal reveal-delay-${(i % 4) + 1}`}
-      >
-        {/* Decorative Border Accent */}
-        <div className="absolute inset-0 rounded-2xl border-r-2 border-b-2 border-[#ff6a21] opacity-60 pointer-events-none"></div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {[
+            {
+              t: "Data Protection",
+              d: "Encryption, backups, and strict data residency policies.",
+            },
+            {
+              t: "Access Control",
+              d: "Fine-grained roles, SSO, and audit logs reduce risk.",
+            },
+            {
+              t: "Reliability",
+              d: "Multi-AZ infrastructure, proactive monitoring & alerts.",
+            },
+            {
+              t: "Compliance",
+              d: "Best-practice handling aligned with applicable regulations.",
+            },
+          ].map((c, i) => (
+            <div
+              key={c.t}
+              className={`relative rounded-2xl bg-white border border-orange-100 p-6 text-center shadow-md hover:shadow-xl transition-all duration-500 reveal reveal-delay-${(i % 4) + 1}`}
+            >
+              {/* Decorative Border Accent */}
+              <div className="absolute inset-0 rounded-2xl border-r-2 border-b-2 border-[#ff6a21] opacity-60 pointer-events-none"></div>
 
-        {/* Content */}
-        <h4 className="font-semibold text-gray-900 text-lg md:text-xl">
-          {c.t}
-        </h4>
-        <p className="mt-3 text-sm text-gray-600 leading-relaxed">{c.d}</p>
-      </div>
-    ))}
-  </div>
-</section>
+              {/* Content */}
+              <h4 className="font-semibold text-gray-900 text-lg md:text-xl">
+                {c.t}
+              </h4>
+              <p className="mt-3 text-sm text-gray-600 leading-relaxed">{c.d}</p>
+            </div>
+          ))}
+        </div>
+      </section>
 
 
       {/* Layout 3: Why Choose Us details */}
       <section className="max-w-7xl mx-auto px-6 pb-16 text-gray-800">
         <h2 className="text-2xl md:text-3xl font-extrabold text-[#ff6a21] mb-6">Why Choose Us</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {modernizationRoadmap.map(({ step, title, desc }, idx) => (
+          {modernizationRoadmap.map(({ step, title, desc }, idx) => (
             <TechProcessCard step={step} title={title} desc={desc} />
 
           ))}
         </div>
       </section>
+      <Footer />
     </>
   )
 }

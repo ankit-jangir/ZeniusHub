@@ -1,44 +1,41 @@
 import React from 'react'
 import PageHero from '../component/PageHero'
+import Header from '../layout/Header'
+import Footer from '../layout/Footer'
 
 const TermsCondition = () => {
   return (
     <>
-    {/* Main hero section  */}
+      <Header />
+      {/* Main hero section  */}
       <PageHero title="Terms and Conditions" />
       <section className="max-w-5xl mx-auto px-6 py-10">
         <div className="bg-white/95 backdrop-blur-sm rounded-xl shadow-xl border border-orange-100">
-          <div className="flex items-center justify-between px-6 md:px-10 py-5 border-b border-orange-100 rounded-t-xl bg-gradient-to-r from-orange-50/70 to-white">
+          <div className="px-6 md:px-10 py-6 border-b border-orange-100 rounded-t-xl bg-gradient-to-r from-orange-50/70 to-white">
             <div>
-              <p className="text-xs md:text-sm text-orange-500 font-semibold tracking-wide uppercase">Zeniushub Legal</p>
-              <h2 className="text-xl md:text-2xl font-extrabold text-gray-900">School ERP – Terms and Conditions</h2>
-            </div>
-            <div className="hidden sm:flex items-center gap-3">
-              <a
-                href="/PDF/Zeniushub.pdf"
-                download="Zeniushub.pdf"
-                className="inline-flex items-center gap-2 px-3 py-2 rounded-lg text-[#ff6a21] border border-[#ff6a21] hover:bg-[#ff6a21] hover:text-white transition-colors text-sm md:text-base"
-              >
-                Download PDF
-              </a>
+              <p className="text-xs md:text-sm text-orange-500 font-semibold tracking-wide uppercase">Zeniushub Legal Document</p>
+              <h2 className="text-xl md:text-2xl font-extrabold text-gray-900 mb-2">Terms and Conditions</h2>
+              <p className="text-sm md:text-base text-gray-600">
+                Please read these terms carefully before using our school management platform and services.
+              </p>
             </div>
           </div>
 
           <article className="px-6 md:px-10 py-8 text-gray-800 leading-relaxed text-sm sm:text-[15px] md:text-base">
             <p className="mb-6">
-              This enhanced draft covers usage, features, user roles, fees, data responsibilities, privacy, and legal clauses important for a comprehensive Terms and Conditions document for your school ERP platform. Here is the expanded full Terms and Conditions document for Zeniushub's School ERP platform with more detailed sub-sections and company details added.
+              These Terms and Conditions outline the usage guidelines, features, user responsibilities, fees, data handling, privacy policies, and legal requirements for Zeniushub's comprehensive school management platform. This document provides detailed information about our services and your rights and obligations when using our educational technology solutions.
             </p>
 
             <h3 className="text-lg md:text-xl font-bold text-[#ff6a21] mt-6">1. Introduction</h3>
             <p className="mt-2">
-              Welcome to Zeniushub. These Terms and Conditions ("Terms") govern your use of the Zeniushub School ERP platform located at D-153, Hanuman Nagar, Amerpali Circle, Vaishali Nagar, Jaipur, Rajasthan, India (Website: <a href="https://zeniushub.in" className="text-[#ff6a21] hover:underline" target="_blank" rel="noreferrer">https://zeniushub.in</a>). By accessing or using any panel of the ERP including master, admin, instructor, or student panels (the "Service"), you agree to be bound by these Terms.
+              Welcome to Zeniushub. These Terms and Conditions ("Terms") govern your use of the Zeniushub school management platform located at D-153, Hanuman Nagar, Amerpali Circle, Vaishali Nagar, Jaipur, Rajasthan, India (Website: <a href="https://zeniushub.in" className="text-[#ff6a21] hover:underline" target="_blank" rel="noreferrer">https://zeniushub.in</a>). By accessing or using any panel of our platform including admin, teacher, student, or parent panels (the "Service"), you agree to be bound by these Terms.
             </p>
 
             <h3 className="text-lg md:text-xl font-bold text-[#ff6a21] mt-6">2. Definitions</h3>
             <ul className="list-disc pl-6 mt-2 space-y-1">
-              <li><strong>Zeniushub, "we", "us", "our"</strong>: The owner and operator of the School ERP platform.</li>
+              <li><strong>Zeniushub, "we", "us", "our"</strong>: The owner and operator of the school management platform.</li>
               <li><strong>User, "you", "your"</strong>: Any person or entity registering or using the Service.</li>
-              <li><strong>Service</strong>: The School ERP software platform offering multiple user panels for school management.</li>
+              <li><strong>Service</strong>: The school management software platform offering multiple user panels for educational institutions.</li>
               <li><strong>Data</strong>: Any personal, institutional, academic, or other data entered, stored, or transmitted via the platform.</li>
             </ul>
 
@@ -138,7 +135,12 @@ const TermsCondition = () => {
               <li>These Terms and Privacy Policy constitute the entire agreement.</li>
             </ul>
 
-            <h3 className="text-lg md:text-xl font-bold text-[#ff6a21] mt-6">16. Contact Information</h3>
+            <h3 className="text-lg md:text-xl font-bold text-[#ff6a21] mt-6">16. Disclaimer</h3>
+            <p className="mt-2">
+              This is a comprehensive educational technology project involving multiple complex systems and integrations. While we strive for accuracy and completeness in all documentation and services, any errors or omissions in this document or our platform are unintentional and do not reflect negligence on our part. We continuously work to improve our services and documentation. If you notice any discrepancies, please contact us for clarification.
+            </p>
+
+            <h3 className="text-lg md:text-xl font-bold text-[#ff6a21] mt-6">17. Contact Information</h3>
             <address className="not-italic mt-2 text-gray-800">
               <div><strong>Zeniushub</strong></div>
               <div>D-153, Hanuman Nagar, Amerpali Circle, Vaishali Nagar</div>
@@ -150,6 +152,7 @@ const TermsCondition = () => {
           </article>
         </div>
       </section>
+      <Footer />
     </>
   )
 }

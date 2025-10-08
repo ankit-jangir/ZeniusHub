@@ -17,6 +17,8 @@ export default function TechProcessCard({ step, title, desc, delay = 0 }) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay }}
+            tabIndex={0}
+            onTouchStart={(e) => e.currentTarget.focus()}
         >
             {/* Expanding orange background layer */}
             <span
@@ -27,6 +29,12 @@ export default function TechProcessCard({ step, title, desc, delay = 0 }) {
           group-hover:w-full group-hover:h-full 
           group-hover:left-0 group-hover:top-0 
           group-hover:rounded-2xl 
+          group-focus:w-full group-focus:h-full 
+          group-focus:left-0 group-focus:top-0 
+          group-focus:rounded-2xl 
+          group-active:w-full group-active:h-full 
+          group-active:left-0 group-active:top-0 
+          group-active:rounded-2xl 
           z-0
         "
             ></span>
@@ -42,6 +50,10 @@ export default function TechProcessCard({ step, title, desc, delay = 0 }) {
           font-semibold text-lg sm:text-xl mb-3 sm:mb-4 select-none 
           group-hover:bg-transparent group-hover:text-white 
           group-hover:border-orange-500 
+          group-focus:bg-transparent group-focus:text-white 
+          group-focus:border-orange-500 
+          group-active:bg-transparent group-active:text-white 
+          group-active:border-orange-500 
           transition-all duration-300
         "
             >
@@ -53,7 +65,7 @@ export default function TechProcessCard({ step, title, desc, delay = 0 }) {
                 className="
           text-lg sm:text-xl md:text-2xl 
           text-gray-900 mb-1 sm:mb-2 font-semibold relative z-10 
-          group-hover:text-white transition-colors duration-300
+          group-hover:text-white group-focus:text-white group-active:text-white transition-colors duration-300
         "
             >
                 {title}
@@ -64,7 +76,7 @@ export default function TechProcessCard({ step, title, desc, delay = 0 }) {
                 className="
           text-sm sm:text-base md:text-[1rem] 
           text-gray-600 leading-relaxed relative z-10 
-          group-hover:text-white transition-colors duration-300
+          group-hover:text-white group-focus:text-white group-active:text-white transition-colors duration-300
         "
             >
                 {desc}
