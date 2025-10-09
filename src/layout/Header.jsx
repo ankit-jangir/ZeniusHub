@@ -104,10 +104,11 @@ const Header = () => {
                         alt="Zeniushub"
                         onClick={() => navigate(pageroute['Home'])}
                         sx={{
-                            height: { xs: 100, sm: 120, md: 156 },
-                            width: 'auto',
+                            height: { xs: 45, sm: 55, md: 65 },
+                            width: { xs: 120, sm: 140, md: 160 },
                             cursor: 'pointer',
                             display: 'block',
+                            objectFit: 'contain',
                         }}
                     />
 
@@ -270,7 +271,7 @@ const Header = () => {
                 <Box ref={drawerRef} sx={{ p: 3 }}>
                     {/* Header inside Drawer */}
                     <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 3 }}>
-                        <Box component="img" src="/Img/headerlogo.png" alt="Zeniushub" sx={{height: { xs: 50, sm: 80,md:190 }, width: 'auto' }} />
+                        <Box component="img" src="/Img/headerlogo.png" alt="Zeniushub" sx={{height: { xs: 40, sm: 45, md: 50 }, width: { xs: 110, sm: 120, md: 130 }, objectFit: 'contain' }} />
                         <IconButton onClick={toggleDrawer(false)} sx={{ color: 'orangered' }}>
                             <X />
                         </IconButton>

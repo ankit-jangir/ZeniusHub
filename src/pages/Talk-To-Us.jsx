@@ -53,7 +53,7 @@ const TalkToUs = () => {
       answer: "Yes, we use enterprise-grade security with SSL encryption, regular backups, and comply with educational data protection regulations to keep your school's information safe."
     },
     {
-      question: "Do you provide training for our teachers and staff?",
+      question: "Do Zeniushub provide training for our teachers and staff?",
       answer: "Absolutely! We offer comprehensive training sessions, video tutorials, and ongoing support to ensure your teachers and staff are comfortable with our modern school management tools."
     },
     {
@@ -66,7 +66,7 @@ const TalkToUs = () => {
     },
     {
       question: "Can we customize the platform for our school's needs?",
-      answer: "Absolutely! Zeniushub is highly customizable. We can tailor the platform to match your school's specific requirements, branding, and educational workflows."
+      answer: "No! Zeniushub is not customizable according to your school needs. In this we just modernise your school."
     }
   ];
 
@@ -88,9 +88,9 @@ const TalkToUs = () => {
                 Our team is here to help you create an engaging learning environment, improve parent communication, and enhance student success.
               </p>
               <div className="flex flex-wrap justify-center lg:justify-start gap-2 sm:gap-3 mb-6 sm:mb-8">
-                <span className="px-3 sm:px-4 py-2 bg-orange-500 text-white rounded-full text-xs sm:text-sm font-medium">Free School Demo</span>
+                <span className="px-3 sm:px-4 py-2 border border-orange-500 text-orange-600 rounded-full text-xs sm:text-sm font-medium">Free School Demo</span>
                 <span className="px-3 sm:px-4 py-2 border border-orange-500 text-orange-600 rounded-full text-xs sm:text-sm font-medium">Teacher Training</span>
-                <span className="px-3 sm:px-4 py-2 border border-orange-500 text-orange-600 rounded-full text-xs sm:text-sm font-medium">Parent App</span>
+                <span className="px-3 sm:px-4 py-2 border border-orange-500 text-orange-600 rounded-full text-xs sm:text-sm font-medium">Student App</span>
               </div>
             </div>
             <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 shadow-xl border border-orange-100">

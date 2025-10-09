@@ -24,7 +24,7 @@ export default function TechProcessCard({ step, title, desc, delay = 0 }) {
             <span
                 className="
           absolute left-4 top-4 w-10 h-10 sm:w-12 sm:h-12 
-          bg-orange-500 rounded-full 
+          bg-orange-500 
           transition-all duration-500 
           group-hover:w-full group-hover:h-full 
           group-hover:left-0 group-hover:top-0 

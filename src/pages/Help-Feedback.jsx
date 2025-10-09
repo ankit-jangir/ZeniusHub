@@ -7,44 +7,44 @@ import Footer from "../layout/Footer";
 
 const faqs = [
   {
-    question: "How long is this site live?",
-    answer: "Zeniushub is continuously evolving to meet the needs of its users. We aim to keep the platform live indefinitely, with regular updates to ensure performance, security, and new feature availability. Our team is committed to long-term support so you can rely on Zeniushub for all your website and CMS needs."
+    question: "How do I set up my school on ZeniusHub?",
+    answer: "Setting up your school is simple! After registration, use the Master Panel to define your school structure, academic sessions, classes, and subjects. Our onboarding team provides step-by-step guidance to ensure smooth setup within 24-48 hours."
   },
   {
-    question: "Can I install/upload anything I want on the platform?",
-    answer: "Currently, uploads are limited to 100MB per instance to ensure optimal performance and stability for all users. This includes images, videos, documents, and other media. We plan to increase upload limits in future updates and may offer premium options for larger files, giving you flexibility while maintaining system reliability."
+    question: "Can parents track their child's attendance and fees?",
+    answer: "Yes! Parents can access their child's attendance records, fee status, exam results, and school announcements through the Student Panel. This provides comprehensive visibility into their child's academic progress and school activities."
   },
   {
-    question: "How can I migrate to another site?",
-    answer: "Migration to another site is currently a manual process. We provide detailed guides to help you export your content, including media, pages, and settings, and then import it safely to your new site. Our support team is also available to assist if you encounter any issues during migration to ensure your data remains intact."
+    question: "How does fee management work in ZeniusHub?",
+    answer: "Our automated fee management system handles fee collection, generates receipts, sends reminders, and provides detailed financial reports. Multiple payment methods are supported including online payments, and parents can view fee history anytime through the app."
   },
   {
-    question: "Can I change the domain you give me?",
-    answer: "At the moment, the platform assigns a fixed domain for each site to simplify setup and management. However, we understand that custom domains are important for branding and professionalism. Custom domain support is planned in upcoming updates, which will allow you to connect your own domain easily."
+    question: "Is student data secure on ZeniusHub?",
+    answer: "Absolutely! We use bank-level security with encrypted data storage, secure user authentication, and regular security audits. Your student information is protected with role-based access control ensuring only authorized personnel can access specific data."
   },
   {
-    question: "How many sites can I create at once?",
-    answer: "Each user account can create one site at the moment. This ensures focus and resources are dedicated to maintaining each site’s performance and reliability. In future updates, we plan to allow users to create multiple sites under a single account, providing greater flexibility for businesses and developers."
+    question: "Can teachers create and manage exams online?",
+    answer: "Yes! Teachers can create exams, assign marks, generate report cards, and share results securely with parents through the Teacher Panel. The system supports multiple assessment types and automatically calculates grades and rankings."
   },
   {
-    question: "Is there a free trial available?",
-    answer: "Yes! Zeniushub offers a 14-day free trial for new users to explore all the platform’s features. This trial allows you to create and customize your site, test integrations, and understand how the platform works before committing to a paid subscription. It’s a risk-free way to experience Zeniushub."
+    question: "Do you provide training for school staff?",
+    answer: "We provide comprehensive training for all users including administrators, teachers, and support staff. This includes video tutorials, live training sessions, and detailed user manuals to ensure everyone can use ZeniusHub effectively."
   },
   {
-    question: "What payment methods are supported?",
-    answer: "We accept multiple payment methods to make transactions simple and secure. This includes major credit and debit cards, UPI, and PayPal. All payment information is encrypted, and subscriptions can be managed directly through your account dashboard, giving you full control over billing and invoices."
+    question: "Can ZeniusHub handle multiple school branches?",
+    answer: "Yes! Our multi-branch management system allows central oversight while maintaining branch-specific operations. Each branch can have customized settings while providing consolidated reporting and management from the main administration."
   },
   {
-    question: "Can I cancel my subscription anytime?",
-    answer: "Absolutely! Zeniushub subscriptions are flexible. You can cancel at any time from your account settings without penalties. Your site will continue to function until the end of your billing cycle, and you won’t be charged for the next period. We want users to feel in control of their subscription choices."
+    question: "How does the attendance system work?",
+    answer: "ZeniusHub supports manual entry and biometric integration for attendance marking. Teachers can mark attendance quickly through the Teacher Panel, and students can view their attendance records anytime through the Student App."
   },
   {
-    question: "Is there customer support available?",
-    answer: "Yes, our dedicated support team is available via multiple channels, including live chat, email, and support tickets. We aim to respond promptly to inquiries and provide guidance for technical issues, platform usage, and troubleshooting. Our goal is to ensure every user has a smooth experience on Zeniushub."
+    question: "What kind of reports can I generate?",
+    answer: "ZeniusHub provides comprehensive reports including academic performance, attendance summaries, fee collection reports, student progress tracking, and administrative analytics. All reports can be exported and customized as needed."
   },
   {
-    question: "Can I add multiple users to my site?",
-    answer: "Yes, Zeniushub supports multi-user management with role-based permissions. You can invite team members to contribute to your site, assign specific roles like editor or admin, and control access to different parts of the platform. This ensures collaboration is efficient and secure for organizations of any size."
+    question: "Is there 24/7 technical support available?",
+    answer: "Yes! Our dedicated support team is available via phone, email, and live chat to assist with any technical issues, user queries, or system guidance. We ensure minimal downtime and quick resolution of all support requests."
   }
 ];
 
@@ -63,8 +63,8 @@ const HelpFeedback = () => {
           <div className="lg:w-1/2">
             <h2 className="text-3xl font-bold text-orange-600 mb-4">Need Help?</h2>
             <p className="text-gray-700 text-lg">
-              Welcome to Zeniushub Help & Feedback section! Here you can find answers to common questions regarding our website
-              If you need further assistance, please contact our support team.
+              Welcome to ZeniusHub Help & Feedback section! Here you can find answers to common questions about our educational management platform, 
+              school setup, and features. If you need further assistance, please contact our support team.
             </p>
           </div>
           <div className="lg:w-1/2">

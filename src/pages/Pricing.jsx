@@ -254,7 +254,7 @@ const PricingCard = ({ plan, highlight }) => {
         </button>
       )}
 
-      <button className="mt-auto bg-gradient-to-r from-orange-500 to-red-500 text-white font-semibold rounded-lg py-2 shadow hover:from-red-500 hover:to-orange-600 transition-colors">
+      <button onClick={() => { window.dispatchEvent(new Event('open-lead-form')); close(); }} className="mt-auto bg-gradient-to-r from-orange-500 to-red-500 text-white font-semibold rounded-lg py-2 shadow hover:from-red-500 hover:to-orange-600 transition-colors">
         Contact Us
       </button>
     </div>

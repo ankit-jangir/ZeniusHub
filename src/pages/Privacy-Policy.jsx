@@ -38,14 +38,17 @@ const PrivacyPolicy = () => {
             <h4 className="font-semibold mt-4">Cookies and Tracking</h4>
             <p className="mt-1">We use cookies and similar technologies to manage sessions and provide analytics for system performance and usage trends.</p>
 
-            <h3 className="text-lg md:text-xl font-bold text-[#ff6a21] mt-6">3. How We Use Your Information</h3>
+            <h3 className="text-lg md:text-xl font-bold text-[#ff6a21] mt-6">3. How your information has been used by our platform
+            </h3>
             <ul className="list-disc pl-6 mt-2 space-y-1">
-              <li>To provide and maintain our school management services and features tailored to each user role.</li>
-              <li>To administer accounts and verify user identity.</li>
-              <li>To process payments and manage subscriptions.</li>
-              <li>To communicate important updates, notifications, and customer support.</li>
-              <li>To detect and prevent fraud or unauthorized system use.</li>
-              <li>To analyze usage data for continuous platform improvements.</li>
+              <li>Your information is used for just your purpose by our platform.
+              </li>
+              <li>To verify your users identity.
+              </li>
+              <li>To process your payments.</li>
+              <li>To manage students Data and security
+                .</li>
+              <li>To provide More efficient and effortless use of our platform by your student and all staff members.</li>
             </ul>
 
             <h3 className="text-lg md:text-xl font-bold text-[#ff6a21] mt-6">4. Sharing and Disclosure</h3>
@@ -74,7 +77,7 @@ const PrivacyPolicy = () => {
             <p className="mt-2">To exercise these rights, contact us through your institution or directly at our support channels.</p>
 
             <h3 className="text-lg md:text-xl font-bold text-[#ff6a21] mt-6">8. Children’s Privacy</h3>
-            <p className="mt-2">Our services are designed for educational institutions. We do not knowingly collect personal data from children under the age of 13 without verified parental consent. If you believe we have inadvertently collected such data, please contact us immediately.</p>
+            <p className="mt-2">Our services are designed for educational institutions. We do not knowingly collect personal data. We store children's data to only zeniushub servers with full privacy. If you believe we have inadvertently collected such data, please contact us immediately.If any data breaches occur but they are not through negligence of zeniushub then we are not responsible for it but we will help to recover it and protect it from getting misused.</p>
 
             <h3 className="text-lg md:text-xl font-bold text-[#ff6a21] mt-6">9. Cookies and Similar Technologies</h3>
             <p className="mt-2">Cookies help us enhance your user experience, maintain sessions, and collect anonymous data for analytics. You can manage cookie preferences through your browser settings.</p>

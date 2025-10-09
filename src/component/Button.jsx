@@ -13,7 +13,7 @@ const Button = ({
             onClick={onClick}
             className={`relative flex items-center justify-center rounded-md  font-semibold text-md 
         ${variant === "normal"
-                    ? "w-40 h-12 px-6 bg-[#FF4500] overflow-hidden text-white"
+                    ? "w-45 h-12 px-6 bg-[#FF4500] overflow-hidden text-white"
                     : text
                         ? "w-48 h-14 px-6 bg-white border-2 border-[#FF4500]"
                         : "w-14 h-14 px-0 bg-white border-2 border-[#FF4500]"

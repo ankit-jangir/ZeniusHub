@@ -1,6 +1,4 @@
 import React from "react";
-import deco from "../../public/Img/QR_code.png";
-import { MapPin, Mail, Phone } from "lucide-react";
 import { ICONS } from "../component/Icons";
 
 export default function Footer() {
@@ -21,9 +19,8 @@ export default function Footer() {
               Zeniushub
             </h2>
             <p className="text-gray-700 max-w-md">
-              With educational institutions galore, the students and their parents are increasingly
-              finding it a daunting task to select from among them the best one so that they can
-              take informed decisions.
+              Premier educational technology company specializing in modern digital panels for institutions. 
+              Optimizing academic operations through data-driven processes for educational excellence.
             </p>
           </div>
 
@@ -56,16 +53,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* <div className="flex flex-col items-center">
-            <h3 className="text-xl font-bold text-white mb-3">QR Code</h3>
-            <div className="flex items-center gap-2 mb-6">
-              <span className="w-14 h-1 bg-[#ff6a21] rounded"></span>
-              <span className="w-6 h-1 bg-[#ff6a21] rounded"></span>
-            </div>
-            <div className="w-72 h-72 p-2 bg-white rounded shadow-lg flex items-center justify-center">
-              <img src={deco} alt="QR code" className="w-full h-full object-contain" />
-            </div>
-          </div> */}
+         
 
           <div>
             <h3 className="text-xl font-bold text-gray-900 mb-3">Get in touch!</h3>

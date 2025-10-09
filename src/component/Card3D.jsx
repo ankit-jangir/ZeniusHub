@@ -56,7 +56,7 @@ const Card3D = ({ title, desc }) => {
                 <motion.div
                     className="absolute top-0 left-0 w-full h-full rounded-2xl"
                     style={{
-                        background: "linear-gradient(135deg, #FFD7A1, #FFB347)", // lightest orange gradient
+                        background: "linear-gradient(135deg, #FFD7A1, #FFB347)", 
                         transform: `translateX(${tX}px) translateY(${tY}px)`,
                         transition: "transform 0.1s ease-out",
                     }}

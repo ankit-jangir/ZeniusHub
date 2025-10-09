@@ -20,7 +20,7 @@ const Homepage = () => {
     {
       date: "Zeniushub ERP",
       title: "Admin Panel",
-      desc: "Run day‑to‑day operations with ease — admissions, fees, reports, and communication in one smart workspace."
+      desc: "Run day-to-day operations with ease — admissions, fees, reports, and communication in one smart workspace."
     },
     {
       date: "Zeniushub ERP",
@@ -43,22 +43,22 @@ const Homepage = () => {
     {
       title: "LearnFlow",
       desc: "Organize classes and timelines effortlessly, so educators and learners stay aligned at every step.",
-      image: "https://api.time.com/wp-content/uploads/2022/11/GettyImages-1358149692.jpg"
+      image: "./Img/Libraries.jpg"
     },
     {
       title: "QuizPulse",
       desc: "Create engaging assessments that motivate progress and track real learning outcomes easily.",
-      image: "https://api.time.com/wp-content/uploads/2022/11/GettyImages-1358149692.jpg"
+      image: "./Img/QuizPulse.jpg"
     },
     {
       title: "TrackEase",
       desc: "Monitor attendance, growth, and engagement with just one click — intelligent and effortless.",
-      image: "https://api.time.com/wp-content/uploads/2022/11/GettyImages-1358149692.jpg"
+      image: "./Img/TrackEase.png"
     },
     {
       title: "ContentSphere",
-      desc: "Build learning resources quickly with drag‑and‑drop simplicity — creativity meets productivity.",
-      image: "https://api.time.com/wp-content/uploads/2022/11/GettyImages-1358149692.jpg"
+      desc: "Build learning resources quickly with drag-and-drop simplicity — creativity meets productivity.",
+      image: "./Img/ContentSphere.jpg"
     },
   ];
 
@@ -196,7 +196,6 @@ const Homepage = () => {
               <Button text="Read More" onClick={() => navigate('/About-Us')} />
             </motion.div>
             {/* Navigation Dots */}
-            {/* Navigation Dots - Vertical for md+ */}
             <div className="absolute right-5 top-1/2 -translate-y-1/2 flex-col space-y-3 z-20 hidden md:flex">
               {data.map((_, i) => (
                 <button
@@ -254,9 +253,7 @@ const Homepage = () => {
               <h3 className="text-xl font-bold mb-2 text-[#FF4500] text-center">{data[index].title}</h3>
               <p className="text-gray-600 text-center mb-4">{data[index].desc}</p>
               <div className="flex justify-center">
-                <button className="bg-gradient-to-r from-[#FF4500] to-[#FF6347] text-white px-5 py-2 rounded-full font-semibold shadow">
-                  READ MORE
-                </button>
+              <Button text="Read More" onClick={() => navigate('/About-Us')} />
               </div>
             </motion.div>
             {/* Dots */}
@@ -283,7 +280,7 @@ const Homepage = () => {
             <span className="text-gray-900">Facilities</span>
           </h2>
           <p className="text-gray-500 leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+            Discover ZeniusHub's comprehensive suite of intelligent features designed to streamline every aspect of educational management. From seamless learning flows to advanced analytics, our platform empowers institutions with cutting-edge tools that enhance productivity, engagement, and learning outcomes across all academic processes.
           </p>
         </div>
 

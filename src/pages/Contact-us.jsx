@@ -137,7 +137,7 @@ const Contactus = () => {
                 <Button
                   type="submit"
                   text="Send Message"
-                  className="py-2 sm:py-2.5 px-3 sm:px-5 text-[11px] sm:text-sm"
+                  variant='normal'
                 />
               </div>
 

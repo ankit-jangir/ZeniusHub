@@ -25,9 +25,9 @@ const CounterCard = ({
   }, [number, duration]);
 
   return (
-    <div className={`rounded-lg p-8 ${bgColor}`}>
+    <div className={`rounded-lg p-2 ${bgColor}`}>
       <div className={`text-4xl font-bold ${textColor}`}>{count}</div>
-      <h3 className="mt-4 text-xl font-semibold text-gray-700">{title}</h3>
+      <h3 className=" text-xl font-semibold text-gray-700">{title}</h3>
     </div>
   );
 };

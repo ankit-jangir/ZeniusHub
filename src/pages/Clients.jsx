@@ -36,15 +36,15 @@ const Clients = () => {
             </p>
 
             {/* Stats Section */}
-            <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div className="mt-8 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {[
-                { n: 80, t: "Happy Clients", Icon: ICONS.Users },
-                { n: 50, t: "Institutions", Icon: ICONS.award },
-                { n: 230, t: "Projects", Icon: ICONS.barchart3 },
+                { n: 80, t: "Happy Clients", r: "Schools love our simple interface", Icon: ICONS.Users },
+                { n: 50, t: "Institutions", r: "Growing network across India", Icon: ICONS.award },
+                { n: 230, t: "Projects", r: "Successfully delivered solutions", Icon: ICONS.barchart3 },
               ].map((c, i) => (
                 <div
                   key={i}
-                  className="rounded-2xl bg-white border border-[#ff6a21]/20 shadow-md hover:shadow-lg transition-all p-4 flex flex-col items-center justify-center min-h-[130px] sm:min-h-[150px]"
+                  className="rounded-2xl bg-white border border-[#ff6a21]/20 shadow-md hover:shadow-lg transition-all p-4 flex flex-col items-center justify-center min-h-[150px] sm:min-h-[170px]"
                 >
                   <div className=" h-12 w-12 rounded-xl bg-orange-50 flex items-center justify-center">
                     <c.Icon className="text-[#ff6a21] text-xl sm:text-2xl" />
@@ -60,6 +60,9 @@ const Clients = () => {
                   </div>
                   <div className="text-xs sm:text-sm font-semibold text-gray-700">
                     {c.t}
+                  </div>
+                  <div className="text-xs text-gray-500 text-center mt-1">
+                    {c.r}
                   </div>
                 </div>
               ))}
