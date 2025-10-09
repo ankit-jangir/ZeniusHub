@@ -210,7 +210,7 @@ const Contactus = () => {
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-orange-100">
               <iframe
                 title="Zeniushub Office Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.140618983433!2d75.80071021503378!3d26.93442898313193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db6ff4c13d81f%3A0xf0d7413e204513c5!2sD-153%2C%20Hanuman%20Nagar%2C%20Amerpali%20Circle%2C%20Vaishali%20Nagar%2C%20Jaipur%2C%20Rajasthan%20302021!5e0!3m2!1sen!2sin!4v1696656456789!5m2!1sen!2sin"
+               src="https://www.google.com/maps?q=D-153,+Hanuman+Nagar,+Vaishali+Nagar,+Jaipur&output=embed"
                 width="100%"
                 height="250"
                 className="border-0 sm:h-80"
