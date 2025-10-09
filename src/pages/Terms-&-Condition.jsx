@@ -137,7 +137,7 @@ const TermsCondition = () => {
 
             <h3 className="text-lg md:text-xl font-bold text-[#ff6a21] mt-6">16. Disclaimer</h3>
             <p className="mt-2">
-              This is a comprehensive educational technology project involving multiple complex systems and integrations. While we strive for accuracy and completeness in all documentation and services, any errors or omissions in this document or our platform are unintentional and do not reflect negligence on our part. We continuously work to improve our services and documentation. If you notice any discrepancies, please contact us for clarification.
+              This is a comprehensive educational technology project involving multiple complex systems and integrations. While we strive for accuracy and completeness in all documentation and services, any errors or omissions in this document or our platform are unintentional and do not reflect negligence on our part. We are not responsible but we will make sure your data doesn't leak and we can secure it as soon as possible and make it more secure and effective to our system. We continuously work to improve our services and documentation. If you notice any discrepancies, please contact us for clarification.
             </p>
 
             <h3 className="text-lg md:text-xl font-bold text-[#ff6a21] mt-6">17. Contact Information</h3>
